@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 const PokeCards = (pokemon:any, pokeimage:any) => {
     return (
         <div className="p-5">
-            <div className="border-2 w-52 pt-10 pr-10 pl-10 rounded-lg">
-                <div className="justify-center flex">
+            <div className="w-52 pt-10 pr-10 pl-10 rounded-lg bg-[#E02D30]">
+                <div className="justify-center flex bg-[#F3F9FF] rounded-lg">
                     <img src={pokemon.pokemon.sprites.front_default} alt="" />
                 </div>
                 <div className="pb-5">

@@ -20,14 +20,16 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="container mx-auto">
-      <h1 className="text-4xl text-center">Pokedex</h1>
-      <div className="flex flex-wrap mt-10 justify-center">
-        {pokemons?.map((pokemon: any, index) => (
-          <div key={index}>
-            <PokeCards className="flex" pokemon={pokemon.data} pokeimage={pokemon.data.sprites.front_default}></PokeCards>
-          </div>
-        ))}
+    <div className="bg-[#1694E0]">
+        <h1 className="text-4xl text-center pt-10 font-sans font-semibold text-[#FFFC75]">Pokedex</h1>
+      <div className="mx-auto container">
+        <div className="flex flex-wrap mt-10 justify-center">
+          {pokemons?.map((pokemon: any, index) => (
+            <div key={index}>
+              <PokeCards className="flex" pokemon={pokemon.data} pokeimage={pokemon.data.sprites.front_default}></PokeCards>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
